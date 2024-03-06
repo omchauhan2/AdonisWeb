@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sample HTML Page</h1>
+    </header>
+    <section>
+        <h2>Welcome to my HTML page!</h2>
+        <p>This is a sample HTML page created for demonstration purposes.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sample HTML Page</p>
+    </footer>
+    <h1>Users</h1>
+<ul>
+  @foreach(user in fetchQuery)
+    <li>{{user.Name}}</li>
+  @endforeach
+</ul>
+
+
+
+<button type="submit">Edit</button>
+</body>
+</html>
